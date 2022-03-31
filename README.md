@@ -1,14 +1,14 @@
-#Pyspark-egg
+# Pyspark-egg
 
 Sample pyspark project used to illustrate how to use eggs with pyspark REPL or with Spark Submit.
 
-##How to use
+## How to use
+### Generate egg
 After sourcing the project you will be able to generate the egg file related to the project by calling:
 `python setup.py bdist_egg`
 The egg will be generated in `dist` directory of your project.
 
-##How to use
-###With Spark REPL
+### With Spark REPL
 Once the egg generated in `dist` directory, you can launch the pyspark REPL by specifying the egg like that:
 `pyspark --py-files /path/to/your/project/dist/pyspark_hello_world_egg-0.0.1-py3.7.egg`
 
@@ -32,7 +32,7 @@ It should give you this output:
 |World|  2|  Transformed !|
 +-----+---+---------------+
 ```
-###With Spark Submit
+### With Spark Submit
 With spark submit it will be like that:
 `
 spark-submit --master local --py-files  /path/to/your/project/dist/pyspark_hello_world_egg-0.0.1-py3.7.egg
