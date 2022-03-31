@@ -21,7 +21,7 @@ source_data = [("Hello", 1),("World", 2)]
 source_df = get_spark().createDataFrame(source_data, ["word", "id"])
 
 result_df = transform_column(source_df)
-actual_df.show()
+result_df.show()
 `````
 It should give you this output:
 ```
